@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-FM</title>
+    <link rel="shortcut icon" href="image/kisspng-lettering-monogram-clip-art-monogram-5aeb1bfda0d635.3024912515253575656588.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/style2.css">
+    
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: orange;
+          color: black;
+        }
+        
+        
+        .currentpage{
+            background-color: orange;
+          color: white;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        @media screen and (max-width: 700px) {
+          .topnav a:not(:first-child) {display: none;}
+          .topnav a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        @media screen and (max-width: 700px) {
+          .topnav.responsive {position: relative;}
+          .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+        }
+       
+        </style>
+</head>
+
+<body >
+    <div class="w3-top">
+        <div class="topnav" id="myTopnav">
+            <a   href="index.html"><img src="image/kisspng-lettering-monogram-clip-art-monogram-5aeb1bfda0d635.3024912515253575656588.png" style="height: 23px;" alt=""></a>
+            <a href="radyo.html "><i class="fas fa-broadcast-tower"></i> Radyo</a>
+            <a href="spotify.html"><i class="fab fa-spotify"></i> Spotify</a>
+            <a class="currentpage" href="hitler.html"><i class="fas fa-fire"></i> Haftann Hitleri</a>
+            <a href="iletisim.html"><i class="fas fa-envelope-square"></i> İletişim</a>
+            <a  style="float: right;" href="login.html"><i class="fas fa-sign-in-alt"></i> Giriş Yap</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/metallica.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>2020 Metallica Konseri</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/esfest.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>2020 ESFEST</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/zeytinli.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>2020 Zeytinli Rock Festivali</h5>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+          
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Türkiye Top Hit 4
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="card-deck">
+                            <div class="col-lg-3 col-md-6 ">
+                                <img src="image/tones.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tones  Dance Monkey</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal101">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal101" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel101" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel101">Tones And I / Dance Monkey</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/to1ybkIYcYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/ncs1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title ">Cartoon  On & On</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary " data-toggle="modal"
+                                        data-target="#exampleModal102">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal102" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel102" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel102">Cartoon - On & On</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/ncs2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Different My Heart</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal103">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal103" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel103" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel103">Different Heaven & EH!DE - My Heart</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jK2aIUmmdP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6" >
+                                <img src="image/ncs3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">DEAF KEV - Invincible</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal104">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal104" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel104" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel104">DEAF KEV - Invincible</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/J2X5mJ3HDYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingtwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsetwo"
+                            aria-expanded="true" aria-controls="collapsetwo">
+                            USA Top Hit 4
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapsetwo" class="collapse" aria-labelledby="headingtwo"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row ">
+                            <div class="card-deck">
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/ncs4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Janji  Heroes Tonight</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal201">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal201" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel201" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel201">Janji - Heroes Tonight</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3nQNiWdeH2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 " >
+                                <img src="image/5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Disfigure Blank</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal202">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal202" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel202" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel202">Disfigure - Blank</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/p7ZsBPK656s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6" >
+                                <img src="image/6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Electro Symbolism</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal203">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal203" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel203" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel203">Electro-Light - Symbolism</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/__CRWE-L45k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Elektro Sky High</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal204">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal204" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel204" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel204">Elektronomia - Sky High</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TW9d8vYrVFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingthree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsethree"
+                            aria-expanded="true" aria-controls="collapsethree">
+                            Germany Top Hit 4
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapsethree" class="collapse" aria-labelledby="headingthree"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row ">
+                            <div class="card-deck">
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cartoon We Lose</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal301">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal301" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel301" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel301">Cartoon - Why We Lose</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zyXmsVwZqX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tobu  Hope</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal302">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal302" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel302" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel302">Tobu - Hope</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EP625xQIGzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/10.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Warriyo Mortals</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal303">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal303" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel303" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel303">Warriyo - Mortals</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yJg-Y5byMMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/11.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aeden Nobody Perfect</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal304">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal304" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel304" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel304">Aeden & Um41K - Ain't Nobody Perfect</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qcayt_B8868" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            France Top Hit 4
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row ">
+                            <div class="card-deck">
+                            <div class="col-lg-3 col-md-6" >
+                                <img src="image/12.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">More Plastic  Razor</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                   
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal401">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal401" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel401" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel401">More Plastic - Razor</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CNFZS-DQwBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/13.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">InfiNoise Back to life</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal402">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal402" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel402" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel402">InfiNoise - Bring me back to life</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Tci64rGWr50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/14.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jim  Sun Goes Down</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal403">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal403" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel403">Jim Yosef x ROY KNOX - Sun Goes Down</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hois2F0Jy2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <img src="image/15.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">More Plastic  Power</h5>
+                                    <p class="card-text">Durma Hemen Dinle Butonuna Tıkla</p>
+                                   
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal404">
+                                        Dinle
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade " id="exampleModal404" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel404" aria-hidden="true">
+                                        <div class="modal-dialog model-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel404">More Plastic - Power</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/leMXTUWQh8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Kapat</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jumbotron jumbotron-fluid bg-warning">
+                <div class="container" >
+                  <h1 class="display-4" style="text-align: center;"> <img src="image/kisspng-lettering-monogram-clip-art-monogram-5aeb1bfda0d635.3024912515253575656588.png" class="card-img-top" style="width: 70px;" alt="">-FM</h1>
+                  <p class="lead" style="text-align: center;">Sınırsız Hit Müzik</p>
+                </div>
+              </div>
+
+
+
+        </div>
+        <embed src="/audio/metallica.mp3"  autostart="true" width="2"
+        height="0">
+</body>
+
+</html>

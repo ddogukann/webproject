@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<title>D-FM</title>
+<link rel="shortcut icon" href="image/kisspng-lettering-monogram-clip-art-monogram-5aeb1bfda0d635.3024912515253575656588.png">
+<meta charset="UTF-8">
+<embed src="/audio/czardas.mp3" loop="true" autostart="true" width="2"
+         height="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image/bg.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    
+    .currentpage{
+        background-color: white;
+        color: black;
+    }
+    
+    .topnav .icon {
+        display: none;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 700px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    </style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="topnav" id="myTopnav">
+        <a class="currentpage"  href="index.html"><img src="image/kisspng-lettering-monogram-clip-art-monogram-5aeb1bfda0d635.3024912515253575656588.png" style="height: 23px;" alt=""></a>
+        <a href="radyo.html "><i class="fas fa-broadcast-tower"></i> Radyo</a>
+        <a href="spotify.html"><i class="fab fa-spotify"></i> Spotify</a>
+        <a href="hitler.html"><i class="fas fa-fire"></i> Haftann Hitleri</a>
+        <a href="#about"><i class="fas fa-envelope-square"></i> İletişim</a>
+        <a  style="float: right;" href="login.html"><i class="fas fa-sign-in-alt"></i> Giriş Yap</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">7/24 Canlı Müzik</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">D-FM</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Radyo Hakkında</span></h5>
+    <p style="text-align: justify;">Radyomuz 2020 yılı mayıs ayında siz değerli dinleyicilerimize yayın yapmaya başlamıştır.Tüm dünyada beğeni kazanmış müzikleri yüksek ses kalitesinde sunmayı ilke edindik.Bu sadelikten sıkıldıysan üst tarafta görebileceğiniz <strong>Radyo</strong> ve <strong>Spotify</strong> butonlarından binlerce şarkı arasından istediğinizi bulabilirsiniz.Spotify'dan radyomuzu takip etmeyi de unutmayın.Bizde her türden müziği bulabilirsiniz</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Ben en güzel şarkılarımı D-FM i dinlerken yazdım. Gece gündüz sunduğu popüler şarkılar sayesinde radyomdaki favorilerde yerini aldı."</i></p>
+      <p>Şarkıcı,Söz Yazarı: Nicki MINAJ</p>
+    </div>
+    <img src="/image/radyo.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Yayın Programı</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Gündüz</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Gece</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Haberler Ve Hava Durumu</h5>
+      <p class="w3-text-grey">Günün önemli gelişmeleri ve şehir şehir hava durumunu saatlerimiz 07:00'ı gösterince sizlere sunuyoruz.</p><br>
+    
+      <h5>Adele ile Slow Time</h5>
+      <p class="w3-text-grey">Güzel bir slow şarkı sabahına kim hayır diyebilir ki saat 07:15-12:00 arası <strong>Adele</strong> sizlerle.</p><br>
+    
+      <h5>Pascal Nouma ile Remix Time</h5>
+      <p class="w3-text-grey"><strong>Pascal </strong>birbirinden güzel remix şarkılarıyla 12:00-17:00 arası sizlerle.</p><br>
+    
+      <h5>Akşam Haberleri</h5>
+      <p class="w3-text-grey">Saat 17:00-18:00 arası akşam haberleri.</p><br>
+    
+      <h5>Geceye Doğru</h5>
+      <p class="w3-text-grey">18:00-24:00 arası hit şarkılara kaldığımız yerden devam ediyoruz.</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Party Hits</h5>
+      <p class="w3-text-grey">Gecenin ilk saatlerinde enerjimizi atıyoruz.</p><br>
+    
+      <h5>Adele ile Slow Time(Tekrar)</h5>
+      <p class="w3-text-grey">Güzel bir slow şarkı sabahına kim hayır diyebilir ki.(03:00-04:00)</p><br>
+    
+      <h5>Klasik Müzik</h5>
+      <p class="w3-text-grey">Karanlıkta ruhunuzu dinlendirecek klasikler.(04:00-05:00)</p><br>
+    
+      <h5>Güneşle Beraber</h5>
+      <p class="w3-text-grey">Güneşin doğuşuyla birlikte içinizi ısıtacak şarkılar sizlerle.(05:00-06:00)</p><br>
+    
+      <h5>İşe Doğru</h5>
+      <p class="w3-text-grey">Yolculuğunuzda sizi yanlız bırakmıyoruz.(06:00-07:00)</p>
+    </div>  
+    <img src="/image/piyano.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <a href="http://www.instagram.com"><img src="/image/insta.png" width="55px" alt=""></a>
+  <a href="http://www.facebook.com"><img src="/image/face.png" width="45px" alt=""></a>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
